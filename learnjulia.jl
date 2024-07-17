@@ -1,3 +1,4 @@
+# number stuff!
 x = 1
 x += 1
 println(x)
@@ -87,3 +88,91 @@ big"5"^x
 
 zero(12470)
 one(BigFloat)
+
+#math stuff!
+x = 1
++x
+-x
+y = 2
+x + y
+x - y
+x = 3
+x * y
+x / y
+x ÷ y
+x \ y
+x ^ y
+x % y
+rem(x, y)
+
+2x
+2(x + y)
+
+false * NaN
+
+x = true
+!x
+y = false
+x && y
+x || y
+# bool is an int type!
+x + 1
+y + 1
+
+x = 8
+y = 3
+~x
+x & y
+x | y
+x ⊻ y # xor
+x ⊼ y # nand
+x ⊽ y # nor
+x >>> y # logical
+x >> y # arithmetic
+~x >> y
+bitstring(~x >> y)
+x << y
+
+xor(3, 4)
+nand(3, 4)
+nor(3, 4)
+x += 5
+# +=  -=  *=  /=  \=  ÷=  %=  ^=  &=  |=  ⊻=  >>>=  >>=  <<=
+
+x = [4, 7, 2]
+print(x)
+x .^ 2 # vectorized dot operators
+.~x
+
+# the dot call performs the broadcats operation.
+(^).(x,3)
+
+3 == 4
+3 == 3
+3 == 3.0
+3 < 4
+3 > 4
+3 >= 3
+4 >= 3
+
+NaN != NaN
+
+# hash key comparisons
+isequal(NaN, NaN)
+isfinite(4.0)
+isfinite(Inf)
+isinf(Inf)
+isnan(NaN)
+
+-0.0 == 0.0
+isequal(-0.0, 0.0)
+# isequal defaults to calling == on hashed x and y
+# so define == and hash functions for own dtypes
+
+x = 3
+y = 4
+z = 5
+x < y < z
+
+# AT CHAINING COMPARISONS IN JULIA DOCS
+# https://docs.julialang.org/en/v1/manual/mathematical-operations/
