@@ -174,5 +174,68 @@ y = 4
 z = 5
 x < y < z
 
-# AT CHAINING COMPARISONS IN JULIA DOCS
-# https://docs.julialang.org/en/v1/manual/mathematical-operations/
+Base.operator_precedence(:+)
+
+x = 4.0
+Int(x)
+convert(Int, x)
+x = 4.6
+round(x)
+round(Int, x)
+floor(x)
+floor(Int, x)
+ceil(x)
+ceil(Int, x)
+round(-x)
+trunc(-x) # round towards 0
+
+x = 10
+y = 3
+
+div(x,y) # div ÷
+fld(x,y) # fld (floored division)
+cld(x,y) # cld (ceiling division)
+rem(x,y) # rem %
+mod(x,y) # mod
+mod1(x,y) # mod1 (with offset 1)
+mod2pi(x) # mod2pi (mod with respect to 2π)
+divrem(x,y) # divrem returns (div(x,y),rem(x,y))
+fldmod(x,y) # fldmod returns (fld(x,y),mod(x,y))
+gcd(x,y) # gcd and lcm
+lcm(x,y)
+
+abs(-x)
+abs2(-x)
+abs2(x)
+sign(x)
+sign(-x)
+sign(0)
+signbit(-1)
+copysign(3, -81)
+flipsign(-123, -4)
+
+sqrt(4)
+cbrt(8)
+hypot(3, 4)
+exp(2)
+ℯ^2
+expm1(3) # exp(x) - 1
+ldexp(2.0, 2) # x * 2^n
+log(2) # base ℯ
+log(10, 10)
+# log2
+# log10
+# log1p (log(1+x))
+exponent(17) # binary exponent of x
+significand(3.0) # mantissa of x
+
+# sin    cos    tan    cot    sec    csc
+# sinh   cosh   tanh   coth   sech   csch
+# asin   acos   atan   acot   asec   acsc
+# asinh  acosh  atanh  acoth  asech  acsch
+# sinc   cosc
+
+# sind   cosd   tand   cotd   secd   cscd
+# asind  acosd  atand  acotd  asecd  acscd
+
+https://docs.julialang.org/en/v1/manual/complex-and-rational-numbers/
