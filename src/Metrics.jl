@@ -2,8 +2,6 @@ module Metrics
 
 export euclidean_distance
 
-function euclidean_distance(a, b)
-        return sqrt(sum((a - b).^2))
-end
+euclidean_distance(a, b) = sqrt(sum((a - b).^2))
 
 end
